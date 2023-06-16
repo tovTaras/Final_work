@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kurwasowa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+<div class="header"> KURSACH 
+    <div class="by">by</div>
+    <div class="header_sign">IOT STUDENT<br>Taras Tovarnitsky</div>
+    
+</div>
+<div class="content">
+    <div class="buttonsForAlgorithm">
+        <button onclick="getDataFromLed(this.id)" id="1" class="buttonLed">1</button>
+        <button onclick="getDataFromLed(this.id)" id="2" class="buttonLed">2</button>
+        <button onclick="getDataFromLed(this.id)" id="3" class="buttonLed">3</button>
+        <button onclick="getDataFromLed(this.id)" id="4" class="buttonLed">4</button>
+        <button onclick="getDataFromLed(this.id)" id="5" class="buttonLed">5</button>
+        <button onclick="getDataFromLed(this.id)" id="6" class="buttonLed">6</button>
+        <button onclick="getDataFromLed(this.id)" id="7" class="buttonLed">7</button>
+        <button onclick="getDataFromLed(this.id)" id="8" class="buttonLed">8</button>
+    </div>
+    <div>
+        <button class="onAll">ACTIVATE ALL</button>
+        <button class="offAll">DISABLE ALL</button>
+    </div>
+    <button class="realTime">REAL TIME</button>
+    <div>
+        <button class="createAlgorithm">CREATE ALGHORITHM</button>
+        
+            <button disabled class="send"><i class='fa fa-send'></i></button>
+        
+    </div>
+    <div>
+        <button onclick="getAllAlgorithm()" class="getAlgorithms">ALGHORITHMS</button>
+    </div>
+    <div id="items_container">
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
